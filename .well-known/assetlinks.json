@@ -1,12 +1,8 @@
-[
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.francovilardo.shapemaster",
-      "sha256_cert_fingerprints": [
-        "57:47:38:82:9B:73:A1:E6:98:84:51:D5:A3:6C:0D:04:AF:3E:FC:C1:18:86:17:83:9E:36:D3:1E:1D:D1:CF:05"
-      ]
-    }
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.francovilardo.escondi2",
+    "sha256_cert_fingerprints": ["62:A5:F9:D1:43:B6:8F:86:70:B5:A3:93:60:5F:0D:0F:69:DB:18:AC:65:3F:6E:2E:A3:E3:8F:60:45:3C:DE:CB"]
   }
-]
+}]
