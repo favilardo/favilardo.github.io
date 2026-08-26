@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.francovilardo.shapemaster",
       "sha256_cert_fingerprints": [
-        "57:47:38:82:9B:73:A1:E6:98:84:51:D5:A3:6C:0D:04:AF:3E:FC:C1:18:86:17:83:9E:36:D3:1E:1D:D1:CF:05"
+        "57:47:38:82:9B:73:A1:E6:98:84:51:D5:A3:6C:0D:04:AF:3E:FC:C1:18:86:17:83:9E:36:D3:1E:1D:D1:CF:05",
+        "3C:4B:00:1F:D4:41:CF:37:12:1E:66:71:65:A9:4A:39:D0:56:58:C6:AD:9E:BF:02:0D:C8:4B:A0:8B:FA:7B:DE"
       ]
     }
   },
