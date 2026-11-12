@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de Shape Master</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1b1b1f;background:#fff;max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.7rem;line-height:1.25}h2{font-size:1.2rem;margin-top:2em}
+code{background:#f0f0f4;padding:1px 4px;border-radius:4px;word-break:break-all}
+a{color:#3b4cca;word-break:break-word}.lang{font-size:.9rem}
+@media (prefers-color-scheme:dark){body{background:#121216;color:#e6e6ea}code{background:#26262e}a{color:#9aa7ff}}
+</style>
+</head>
+<body>
+<p class="lang"><a href="C:/Program Files/Git/shapemaster/privacy/en/">English</a></p>
+<h1>Política de privacidad de Shape Master</h1>
+<p><strong>Última actualización:</strong> 11 de noviembre de 2026</p>
+<p><strong>Responsable:</strong> Franco Vilardo</p>
+<p><strong>Contacto:</strong> <a href="mailto:favilardo@gmail.com">favilardo@gmail.com</a></p>
+<h2>1. Qué es Shape Master</h2>
+<p>Shape Master ("el juego") es un juego arcade para Android. Esta política explica qué datos trata el juego, con qué fin, con quién se comparten y cómo puedes borrarlos.</p>
+<p><strong>En resumen:</strong></p>
+<ul>
+<li>El juego no tiene cuentas propias ni servidores propios. El desarrollador no recibe ni almacena tus datos de juego.</li>
+<li>Iniciar sesión con Google es opcional y solo sirve para guardar tu progreso en la nube de tu propia cuenta de Google.</li>
+<li>El juego muestra anuncios de Google AdMob, que pueden tratar datos como el identificador de publicidad.</li>
+</ul>
+<h2>2. Datos que se guardan en tu dispositivo</h2>
+<p>El juego guarda en el almacenamiento privado de la app (no accesible para otras apps) un archivo de partida con:</p>
+<ul>
+<li>Tu progreso: mejor puntaje de Endless, niveles completados y estrellas.</li>
+<li>Tu inventario: monedas, compras dentro del juego (aspectos, temas, poderes, mejoras) y el poder equipado a cada lado. Las monedas son una moneda virtual del juego; <strong>no se compran con dinero real</strong>.</li>
+<li>Preferencias: música y sonidos activados o no, aspecto y tema equipados.</li>
+<li>Progreso del dispositivo: misiones diarias, racha diaria, anuncios vistos para desbloquear aspectos y la fecha del último "revivir con monedas".</li>
+<li>Un identificador aleatorio de instalación (generado por el propio juego, sin relación con tu dispositivo, tu cuenta ni tu identificador de publicidad) que distingue de qué dispositivo vienen las monedas ganadas al mezclar progreso entre dispositivos.</li>
+</ul>
+<p>Estos datos permanecen en tu dispositivo y se usan solo para que el juego funcione. Salen del dispositivo únicamente si inicias sesión con Google (sección 3).</p>
+<h2>3. Inicio de sesión con Google y guardado en la nube (opcional)</h2>
+<p>Puedes tocar "Iniciar sesión con Google" para guardar y restaurar tu progreso entre dispositivos. No es necesario para jugar.</p>
+<p><strong>Permisos que se piden a Google (alcances OAuth):</strong> <code>openid</code>, <code>email</code> y <code><a href="https://www.googleapis.com/auth/drive.appdata">https://www.googleapis.com/auth/drive.appdata</a></code>.</p>
+<ul>
+<li><code>drive.appdata</code> da acceso <strong>solo a la carpeta oculta de datos de esta app</strong> en tu Google Drive. El juego no puede ver ni modificar tus demás archivos de Drive.</li>
+<li>De tu cuenta de Google, el juego <strong>solo usa tu correo electrónico</strong>, y solo para mostrarlo en el menú principal mientras la sesión está iniciada. No se envía al desarrollador ni se guarda en la nube. El juego no pide tu nombre ni tu foto de perfil.</li>
+<li>El juego guarda en tu dispositivo los tokens de acceso y de actualización que entrega Google, para no pedirte iniciar sesión cada vez. Se guardan cifrados con el almacén de claves de Android (Android Keystore) y se borran al cerrar sesión.</li>
+<li>Durante el inicio de sesión, Google te devuelve a la app mediante la dirección <code><a href="https://favilardo.github.io/oauth2redirect">https://favilardo.github.io/oauth2redirect</a></code>, alojada en GitHub Pages. Android abre el juego directamente con esa dirección, sin cargar ninguna página, y el juego no guarda el código de autorización después de canjearlo. Si tu dispositivo no abriera el juego y el navegador cargara esa dirección, GitHub recibiría la solicitud como cualquier servidor web y la trataría según su propia política: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a></li>
+</ul>
+<p><strong>Qué se sube a tu Google Drive (archivo <code>savegame.json</code> en la carpeta oculta de la app):</strong> mejor puntaje, niveles completados, estrellas, contadores de monedas ganadas y gastadas (por identificador de instalación), objetos comprados, niveles de mejoras, poderes equipados y la fecha de ese cambio. <strong>No se suben</strong> tu correo, el aspecto o tema equipados, las preferencias de sonido, las misiones ni la racha.</p>
+<p>Cuándo se sincroniza: al iniciar sesión y al abrir la app con sesión iniciada se descarga el archivo y se mezcla con tu progreso local; después, cada vez que el juego guarda, se sube la versión actualizada. Los datos viajan por HTTPS directamente entre tu dispositivo y Google. El desarrollador no tiene acceso a ese archivo.</p>
+<p>Google trata esos datos según su propia política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>4. Anuncios (Google AdMob)</h2>
+<p>El juego muestra anuncios de Google AdMob: banner en los menús, anuncios a pantalla completa cada cierto número de niveles o derrotas y anuncios con recompensa que tú eliges ver (para monedas, revivir o un aspecto). El juego no muestra anuncios durante la partida.</p>
+<p>AdMob es un servicio de Google que, para mostrar y medir anuncios, puede recopilar y tratar de forma automática datos como: el identificador de publicidad de tu dispositivo, la dirección IP, ubicación aproximada, información del dispositivo y del sistema, interacciones con los anuncios y datos de diagnóstico. El desarrollador no recibe esos datos personales, pero sí informes agregados de ingresos. La lista exacta y los fines la define Google; consúltala en <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a> y <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<ul>
+<li><strong>Identificador de publicidad:</strong> la app declara el permiso de ID de publicidad de Android. Puedes restablecerlo o desactivar la personalización de anuncios en los ajustes de Android (Ajustes &gt; Google &gt; Anuncios).</li>
+<li><strong>Consentimiento:</strong> el juego integra el formulario de consentimiento de Google (UMP). En las regiones donde la ley lo exige (por ejemplo el Espacio Económico Europeo y el Reino Unido), se te mostrará un formulario para elegir tus preferencias antes de cargar anuncios.</li>
+<li><strong>Tipo de anuncios:</strong> el juego configura una clasificación máxima de contenido de anuncios "G" (apto para todo público). No se marca el tratamiento dirigido a niños (ver sección 8).</li>
+</ul>
+<h2>5. Compartir tu récord</h2>
+<p>El botón "Compartir" genera en tu dispositivo una imagen con tu puntaje o nivel y el aspecto equipado, y la entrega al menú de compartir de Android. Tú eliges con qué app compartirla. El juego no sube la imagen a ningún servidor propio; una vez compartida, la trata la app que elijas, bajo su propia política. La imagen no incluye tu nombre, correo ni otros datos personales.</p>
+<h2>6. Con quién se comparten los datos</h2>
+<ul>
+<li><strong>Google</strong> (Google Sign-In, Google Drive y AdMob), según lo descrito arriba.</li>
+<li><strong>Alojamiento de la página de redirección del inicio de sesión:</strong> GitHub Pages (ver sección 3).</li>
+<li>No hay otros terceros: el código del juego no incluye herramientas de analítica propias ni de reporte de fallos de terceros, ni compras con dinero real. La librería de anuncios de Google (AdMob) sí recopila por su cuenta datos de diagnóstico y de uso de los anuncios, descritos en la sección 4.</li>
+<li>No vendemos datos personales.</li>
+</ul>
+<h2>7. Por cuánto tiempo y cómo borrar tus datos</h2>
+<ul>
+<li><strong>Datos en el dispositivo:</strong> se eliminan al desinstalar el juego o al borrar sus datos (Ajustes de Android &gt; Apps &gt; Shape Master &gt; Almacenamiento &gt; Borrar datos).</li>
+<li><strong>Cerrar sesión:</strong> el botón "Cerrar sesión" del menú borra del dispositivo los tokens de Google y deja de sincronizar. <strong>No borra el archivo que ya está en tu Google Drive.</strong></li>
+<li><strong>Borrar la copia en la nube:</strong> en tu Google Drive (versión web) abre Configuración &gt; Administrar aplicaciones, busca Shape Master y en sus opciones elige eliminar los datos ocultos de la aplicación. Los nombres de estas opciones los define Google y pueden cambiar.</li>
+<li><strong>Quitar el acceso:</strong> en tu cuenta de Google, sección "Seguridad &gt; Tus conexiones con apps y servicios de terceros" (<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>), elige Shape Master y "Quitar acceso".</li>
+<li><strong>Anuncios:</strong> restablece o elimina tu identificador de publicidad en los ajustes de Android. Para borrar datos que Google ya tenga por los anuncios, usa los controles de tu cuenta de Google ("Mi actividad").</li>
+<li>Como el desarrollador no almacena tus datos en servidores propios, no hay una base de datos del desarrollador de la que haya que borrarte. Si tienes dudas, escribe a <a href="mailto:favilardo@gmail.com">favilardo@gmail.com</a>.</li>
+</ul>
+<h2>8. Menores de edad</h2>
+<p>Shape Master no está dirigido a menores de 13 años y no recopilamos intencionadamente datos de ellos. Si crees que un menor nos ha dado datos, escríbenos y los borraremos.</p>
+<h2>9. Seguridad</h2>
+<p>Las comunicaciones con Google (inicio de sesión, Drive y anuncios) usan HTTPS. El archivo de partida local está en el almacenamiento privado de la app. Ningún sistema es 100 % seguro.</p>
+<h2>10. Tus derechos</h2>
+<p>Según el lugar donde vivas (por ejemplo RGPD/LGPD u otras leyes) puedes tener derechos de acceso, rectificación, supresión, oposición o portabilidad. Como los datos de juego están en tu dispositivo y en tu propio Google Drive, puedes ejercer la mayoría de esos derechos directamente (secciones 3 y 7). Para otras consultas escribe a <a href="mailto:favilardo@gmail.com">favilardo@gmail.com</a>.</p>
+<h2>11. Cambios en esta política</h2>
+<p>Si cambiamos qué datos trata el juego, actualizaremos esta página y la fecha de arriba.</p>
+<h2>12. Contacto</h2>
+<p><a href="mailto:favilardo@gmail.com">favilardo@gmail.com</a></p>
+</body>
+</html>
